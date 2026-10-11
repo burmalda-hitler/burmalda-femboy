@@ -1,0 +1,30 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Блокировщик рекламы",
+  "version": "6.48.0",
+  "description": "Блокируйте рекламу на YouTube и ваших любимых сайтах бесплатно.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
