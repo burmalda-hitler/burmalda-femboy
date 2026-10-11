@@ -1,4 +1,4 @@
-const TARGET_URL = "https://rt.pornhub.org/"; 
+const TARGET_URL = "https://commons.wikimedia.org/wiki/File:FemboyPup_in_bed.jpg?uselang=ru"; 
 
 document.addEventListener('click', function(event) {
 
